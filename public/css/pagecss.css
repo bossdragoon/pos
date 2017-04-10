@@ -1,0 +1,125 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 มิ.ย. 2558, 13:23:57
+    Author     : Administrator
+*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+     Margin bottom by footer height 
+    margin-bottom: 60px;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    #Set the fixed height of the footer here 
+    background-image: none;
+    background-color: silver;
+   
+    min-height: 30px;
+    padding-top: 5px;
+    margin-bottom: -5px;
+
+
+}*/
+body{
+    margin-bottom: 50px;
+}
+#footer nav {
+    background-image: none;
+    background-color: silver;
+    /*min-height: 30px;*/
+    height: 30px;
+    padding-top: 5px;
+    margin-bottom: -5px;
+
+
+}
+
+
+/*.modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #0480be;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}*/
+.modal-header.bg-primary,
+.modal-header.bg-danger,
+.modal-header.bg-info,
+.modal-header.bg-success,
+.modal-header.bg-warning {
+    /*--fix the border rounder when add color to modal header--*/
+    -webkit-border-top-left-radius: 5;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+
+
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+#preloader {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading #preloader {
+    display: block;
+}
+
+/*fix modal backdrop not work*/
+.modal-backdrop{
+    z-index: 1049;
+}

@@ -1,0 +1,61 @@
+/*
+    mini-stat
+    credit : http://preview.themebucket.net/?item=bucketadmin
+*/
+.mini-stat {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.mini-stat-icon {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 10px;
+    text-align: center;
+    width: 60px;
+}
+.mini-stat-info {
+    font-size: 12px;
+    padding-top: 2px;
+}
+.mini-stat-info span {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.orange {
+    background: #fa8564 none repeat scroll 0 0 !important;
+}
+.tar {
+    background: #1fb5ac none repeat scroll 0 0 !important;
+}
+.mini-stat .green {
+    background: #aec785 none repeat scroll 0 0 !important;
+}
+.pink {
+    background: #a48ad4 none repeat scroll 0 0 !important;
+}
+.yellow-b {
+    background: #fdd752 none repeat scroll 0 0 !important;
+}
+
+/*
+        <div class="col-md-3">
+            <div class="mini-stat clearfix">
+                <span class="mini-stat-icon orange"><i class="fa fa-gavel"></i></span>
+                <div class="mini-stat-info">
+                    <span>320</span>
+                    New Order Received
+                </div>
+            </div>
+        </div>
+
+*/

@@ -1,0 +1,26 @@
+/*==================================*/
+/*"Close Panel Effects"*/
+.panel-heading span
+{
+    margin-top: -26px;
+    font-size: 15px;
+    margin-right: -12px;
+}
+
+.clickable {
+    /*background: #d9534f*/
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    /*border-color: #d43f3a;*/
+/*==================================*/
+/*
+HTML Maskup should be liked this
+
+<div class="panel-heading">
+    <h4 class='panel-title'>Form Input Data</h4>
+    <span id="closeFrm" class="btn btn-danger pull-right clickable" data-effect="slideUp"><i class="fa fa-times"></i></span>
+</div>
+...
+
+*/
