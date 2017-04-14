@@ -1,15 +1,13 @@
 <?php
 
 class Bootstrap {
-    
-    
 
     function __construct() {
         $request_url = $keyword = filter_input(INPUT_GET, 'url'); //false if not set,null if filter fail
         $url = explode('/', rtrim((isset($request_url) ? $request_url : null), '/'));
         
         //Set view page that does not require for LOGIN session
-        $exception_url = array('index','login','about','test2');
+        $exception_url = array('index','login','sales','about');
         
         
         //----------- Home page -----------
@@ -88,7 +86,7 @@ class Bootstrap {
     
     function accessRight($controller, $type_user) {
         //Set view page that does require accessRight
-        $chk_ac_url = array('service', 'reports', 'service_status', 'service_detail_status', 'technician', 'depart', 'symptom', 'jobs', 'hardware_type', 'hardware', 'items', 'store_type', 'store');
+        $chk_ac_url = array('reports');
 
         if ((in_array($controller, $chk_ac_url)) && ($type_user === 'staff')) {
             return 'success';

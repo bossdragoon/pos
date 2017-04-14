@@ -19,6 +19,7 @@ if (preg_match("/MSIE [5-9]/", $_SERVER['HTTP_USER_AGENT']) ) {// || (preg_match
 }
 
 //// Autoload
+require 'libs/ActiveForms.php';
 require 'libs/Bootstrap.php';
 require 'libs/Controller.php';
 require 'libs/Model.php';
